@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev     # dev测试环境，prod 正式环境
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/luckymoney?characterEncoding=utf-8
+    username: root
+    password: sharedb
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
