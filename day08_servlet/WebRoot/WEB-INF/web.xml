@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  <!-- servlet生命周期 -->
+  <servlet>
+  	<servlet-name>servletDemon1</servlet-name>
+  	<servlet-class>com.itheima.servlet.ServletDemon1</servlet-class>
+  	<load-on-startup>2</load-on-startup>
+  </servlet> 
+  <servlet>
+  	<servlet-name>servletDemon2</servlet-name>
+  	<servlet-class>com.itheima.servlet.ServletDemon2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletDemon3</servlet-name>
+    <servlet-class>com.itheima.servlet.ServletDemon3</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServlerDemon4</servlet-name>
+    <servlet-class>com.itheima.servlet.ServlerDemon4</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletVonfig</servlet-name>
+    <servlet-class>com.itheima.servletconfig.ServletVonfig</servlet-class>
+      <init-param>
+    	<param-name>encoding</param-name>
+    	<param-value>GBK</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletDemonContext1</servlet-name>
+    <servlet-class>com.itheima.servletContext.ServletDemon1</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>servletDemon1</servlet-name>
+  	<url-pattern>/demon1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>servletDemon2</servlet-name>
+  	<url-pattern>/demon2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemon3</servlet-name>
+    <url-pattern>/servlet/servletDemon3</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>ServletDemon3</servlet-name>
+    <url-pattern>/servlet/servletDemon33</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>ServletDemon3</servlet-name>
+    <url-pattern>/servletDemon3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServlerDemon4</servlet-name>
+    <url-pattern>/servlet/servletDemon4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletVonfig</servlet-name>
+    <url-pattern>/servlet/servletconfig</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDemonContext1</servlet-name>
+    <url-pattern>/servlet/servletDemonContext1</url-pattern>
+  </servlet-mapping>
+
+  
+  <welcome-file-list>
+    <welcome-file>/*/index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

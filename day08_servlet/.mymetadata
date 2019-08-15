@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="day08_servlet"
+  id="myeclipse.1529570068929"
+  context-root="/day08_servlet"
+  j2ee-spec="6.0"
+  archive="day08_servlet.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
